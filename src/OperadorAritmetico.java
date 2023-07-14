@@ -22,9 +22,9 @@ public class OperadorAritmetico {
 
         int numero  = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero "));
         if(numero % 2 == 0 ){
-            System.out.println("numero par = " + numero);
+            System.out.println("fizz= " + numero);
         }else {
-            System.out.println("numero inpar = " + numero);
+            System.out.println("buzz= " + numero);
         }
 
     }
