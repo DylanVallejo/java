@@ -1,3 +1,4 @@
+import javax.lang.model.SourceVersion;
 import java.sql.Struct;
 import java.util.Scanner;
 
@@ -45,17 +46,23 @@ public class OperadoresLogicosLogin {
             boolean login = false;
 
             for (int i = 0; i < users.length; i++){
-                if (users[i].equals(user) && passwords[i].equals(p)) {
-                    login = true;
-                    break;
-                }
+                login  = (users[i].equals(user) && passwords[i].equals(p)) ? true : login;
+//                if (users[i].equals(user) && passwords[i].equals(p)) {
+//                    login = true;
+//                    break;
+//                }
             }
 
-            if(login){
-                System.out.println("Bienvenido ".concat(user).concat("!"));
-            } else {
-                System.out.println("passwordo o usuario erroneo intente de nuevo ");
-            }
+            String mensaje = login ?
+                    "Bienvenido ".concat(user).concat("!") :
+                  "password o usuario erroneo intente de nuevo";
+            System.out.println("mensaje = " + mensaje);
+
+//            if(login){
+//                System.out.println("Bienvenido ".concat(user).concat("!"));
+//            } else {
+//                System.out.println("passwordo o usuario erroneo intente de nuevo ");
+//            }
         }
     }
 }
