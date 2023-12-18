@@ -33,10 +33,10 @@ public class SentenciasBucleEtiquetas {
             int j = 0;
             while( j <= 8 ) {
                 if (i == 6 || i ==7) {
-                    System.out.println("dia  = " + i + "descanso de fin de semana");
+                    System.out.println("dia  : " + i + " descanso de fin de semana");
                     continue bucle;
                 }
-                System.out.println("Dia " + i + " trabajando a las  " + j + " horas");
+                System.out.println("Dia " + i + ": trabajando a las  " + j + " horas");
                 j++;
             }
         }
