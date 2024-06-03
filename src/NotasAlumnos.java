@@ -17,7 +17,6 @@ public class NotasAlumnos {
             int numeroDeNota = i+1;
             System.out.println("Inserte la nota número: " + numeroDeNota+ " del alumno con decimales 7.0 .");
             double notaIngresa = scanner.nextDouble();
-            System.out.println("notaIngresa = " + notaIngresa);
             if (notaIngresa == 0){
                 System.out.println("Error finalizando el programa");
                 break;
@@ -32,21 +31,22 @@ public class NotasAlumnos {
 
         for (double nota : notas) {
             sumaTotal += nota;
-            if (nota > 5){
+            if (nota == 1.0) {
+                numeroDeNotasUno += 1;
+            }
+            if (nota > 5) {
                 notas5 += 1;
                 sumaNotasMayoresACinco += nota;
-            } else if (nota < 4) {
+            }
+             if (nota < 4) {
                 notas4 += 1;
                 sumaNotasMenoresCuatro += nota;
-            } else if (nota == 1.0) {
-                numeroDeNotasUno += 1;
             }
         }
         System.out.println(" Promedio de notas mayores a 5 = " + sumaNotasMayoresACinco / notas5 );
         System.out.println(" Promedio de notas menores a 4 = " + sumaNotasMenoresCuatro / notas4);
-        System.out.println("Cantidad de notas con Uno = " + numeroDeNotasUno );
+        System.out.println(" Cantidad de notas con Uno = " + numeroDeNotasUno );
         System.out.println(" Promedio total = " + sumaTotal / notas.length );
-        System.out.println("notas = " + Arrays.toString(notas));
     }
 }
 
