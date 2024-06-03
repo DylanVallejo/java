@@ -1,16 +1,26 @@
-import java.lang.reflect.Array;
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class NumeroMenor {
     public static void main(String[] args) {
-
-        int[] numeros = {2,1,3,10,0,-2,4};
-        int min = numeros[0];
+        ArrayList<Integer> numeros = new ArrayList<Integer>();
+        Scanner scanner = new Scanner(System.in);
+        while(numeros.size() < 10){
+            System.out.println("ingrese un  numero: ");
+            int numeroIngresado = scanner.nextInt();
+            numeros.add(numeroIngresado);
+        }
+        int min = numeros.get(0);
         for (int numero : numeros) {
             if (numero < min ) {
                 min = numero;
             }
         }
-        System.out.println("min = " + min);
+        if (min < 10){
+            System.out.println("El numero menor es menor que 10! : " + min);
+        }else {
+            System.out.println("El numero menor es mayor o igual que 10! : " + min );
+        }
+
     }
 }
