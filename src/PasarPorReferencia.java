@@ -1,4 +1,4 @@
-public class PasrPorReferencia {
+public class PasarPorReferencia {
     public static void main(String[] args) {
         //       no todos los tipos pasan el valor algunos pasan por referencia como todo CLASES y ARREGLOS
 
