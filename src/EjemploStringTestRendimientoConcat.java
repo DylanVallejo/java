@@ -14,10 +14,15 @@ public class EjemploStringTestRendimientoConcat {
 
         }
 
+//        podemos usar el garbage collector si usamos mcuhas instancias
+//        es opcional ya que es automatico
+        System.gc();
+
         long fin = System.currentTimeMillis();
         System.out.println(fin- inicio);
         System.out.println("c = " + c);
         System.out.println(" sb = " +sb.toString());
+        System.exit(0);
     }
 
 }

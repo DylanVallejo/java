@@ -6,6 +6,8 @@ public class EjemploVariablesDeEntorno  {
         Map<String, String> varEnv = System.getenv();
         System.out.println("Variable de entorno = " + varEnv);
 
+        System.out.println(" ----- Listando variables de entorno del sistema -----");
+
         String username = System.getenv("USERNAME");
         System.out.println("username = " + username);
 
