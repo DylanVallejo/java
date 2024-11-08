@@ -10,7 +10,7 @@ public class EjemploStringTestRendimientoConcat {
         for(int i = 0; i < 500; i++){
 //            c = c.concat(a).concat(b).concat("\n"); // 500 =>2ms
 //            c += a + b + "\n"; 500 => 19 , 10000 => 68 => 100000 => 1976ms
-            sb.append(a).append(b).append("\n"); // 500 => 0  , 100000 =>8ms
+            sb.append(a).append(b).append("\n"); // 500 => 0  , 100000 =>8ms usar sb
 
         }
 
