@@ -31,8 +31,7 @@ public class ArgumentosLineaComandoCalculadora {
                 break;
             default:
                 resultado = a+b;
-        }//jess
-
+        }
 
         System.out.println("El resultado de la operacion  "+operacion + "es : " + resultado);
 
