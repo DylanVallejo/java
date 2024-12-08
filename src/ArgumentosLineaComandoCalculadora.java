@@ -19,8 +19,6 @@ public class ArgumentosLineaComandoCalculadora {
                 resultado = a - b;
                 break;
             case "multiplicacion":
-
-
                 resultado = a * b;
                 break;
             case "dividir":
