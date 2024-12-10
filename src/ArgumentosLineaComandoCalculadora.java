@@ -32,7 +32,7 @@ public class ArgumentosLineaComandoCalculadora {
                 resultado = a+b;
         }
 
-        System.out.println(" El resultado de la operacion  " + operacion + " es : " + resultado);
+        System.out.println("El resultado de la operación  " + operacion + " es : " + resultado);
 
     }
 }
