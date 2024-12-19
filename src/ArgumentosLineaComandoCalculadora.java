@@ -2,7 +2,7 @@ public class ArgumentosLineaComandoCalculadora {
     public static void main(String[] args) {
 
         if (args.length != 3){
-            System.out.println(" Por favor, ingresar una operación ( suma, resta, multiplicación , o división ) y dos entéros: ");
+            System.out.println("Por favor, ingresar una operación ( suma, resta, multiplicación , o división ) y dos entéros: ");
             System.exit(-1);
         }
         String operacion = args[0];
