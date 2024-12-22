@@ -22,7 +22,7 @@ public class EjemploStringValidar {
 
         if(esBlanco == false){
             System.out.println(curso.toUpperCase());
-            System.out.println("Bienvenido al curso de".concat(curso));
+            System.out.println("Bienvenido al curso de: ".concat(curso));
             System.out.println("Hello world " + curso);
         }
 
