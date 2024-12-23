@@ -4,11 +4,11 @@ public class EjemploStringValidar {
 
         boolean esNulo = curso == null;
 
-        System.out.println("esNulo = " + esNulo);
+        System.out.println("es Nulo = " + esNulo);
 
 
         if(esNulo){
-            curso = "Programacion con Java ";
+            curso = "Programación con Java ";
         }
 
         boolean esVacio = curso.isEmpty();
