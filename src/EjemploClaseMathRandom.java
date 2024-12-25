@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.FilterReader;
 import java.util.Random;
 
 public class EjemploClaseMathRandom {
@@ -6,7 +8,7 @@ public class EjemploClaseMathRandom {
 
         String[] colores = {"azul", "amarillo", "rojo", "verde", "blanco", "negro"};
         double random = Math.random();
-        System.out.println("random = " + random);
+        System.out.println("random : " + random);
         random *=  colores.length;
 
         System.out.println(random);
