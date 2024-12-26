@@ -22,7 +22,7 @@ public class EjemploEjecutarProgramaSo {
             System.err.println("El comando es desconocido: "+ e.getMessage() );
             System.exit(1 );
         }
-        System.out.println("se ha cerrado el editor" );
+        System.out.println("se ha cerrado el editor." );
         System.exit(0);
 
 
