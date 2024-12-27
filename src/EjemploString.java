@@ -7,14 +7,14 @@ public class EjemploString {
 
 
         boolean esIgual = curso == curso2;
-        System.out.println("curso == curso2 = " + esIgual);
+        System.out.println("curso == curso2 : " + esIgual);
 
         esIgual = curso.equals(curso2);
-        System.out.println("curso.equals(curso2) = " + esIgual);
+        System.out.println("curso.equals(curso2) : " + esIgual);
 
         String curso3 = "Programacion Java";
         esIgual = curso == curso3;
-        System.out.println("curso == curso3 = " + esIgual);
+        System.out.println("curso == curso3 : " + esIgual);
 
 
     }
