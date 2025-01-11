@@ -5,6 +5,9 @@ public class EjemploArreglosOrdenPrincipioFinal {
         int[] numeros = new int[10];
         for (int numero : numeros){
             System.out.println(numero);
+
+
         }
+
     }
 }
