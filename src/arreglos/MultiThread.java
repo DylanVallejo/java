@@ -55,16 +55,16 @@ public class MultiThread {
 
     private static LinkedHashMap<String, String> initializeHeaders() {
         LinkedHashMap<String, String> headers = new LinkedHashMap<>();
-        headers.put("CODIGO_PRODUCTO", "");
-        headers.put("TIPO_INSTRUMENTO", "");
-        headers.put("PERIODICIDAD_COBRO", "");
-        headers.put("OPERACION_LIBRE", "");
+        headers.put("PRODUCTO", "");
+        headers.put("INSTRUMENTO", "");
+        headers.put("COBRO", "");
+        headers.put("OPERACION", "");
         headers.put("MONEDA", "");
-        headers.put("MONTO_FIJO", "");
-        headers.put("MONTO_VAR", "");
-        headers.put("BASE_COBRO", "");
-        headers.put("LIMITE_MAX", "");
-        headers.put("TIPO_MOVIMIENTO", "");
+        headers.put("MONTO", "");
+        headers.put("VAR", "");
+        headers.put("BASE", "");
+        headers.put("LIMITE", "");
+        headers.put("MOVIMIENTO", "");
         headers.put("COMENTARIO", "");
 
         return headers;
@@ -75,8 +75,8 @@ public class MultiThread {
         File file = new File(path);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, false))) {
             List<String> headerColumns = Arrays.asList(
-                    "CODIGO_PRODUCTO", "TIPO_INSTRUMENTO", "PERIODICIDAD_COBRO", "OPERACION_LIBRE", "MONEDA",
-                    "MONTO_FIJO", "MONTO_VAR", "BASE_COBRO", "LIMITE_MAX", "TIPO_MOVIMIENTO", "COMENTARIO"
+                    "PRODUCTO", "INSTRUMENTO", "COBRO", "OPERACION", "MONEDA",
+                    "MONTO", "VAR", "BASE", "LIMITE", "MOVIMIENTO", "COMENTARIO"
             );
 
             String headerLine = String.join("|", headerColumns) + "\n";
@@ -89,18 +89,18 @@ public class MultiThread {
     private static LinkedHashMap<String, String> processRecord(String id) {
         LinkedHashMap<String, String> recordData = initializeHeaders();
 
-        recordData.put("CODIGO_PRODUCTO", id);
-        recordData.put("TIPO_INSTRUMENTO", "test" + id);
-        recordData.put("PERIODICIDAD_COBRO", "test" + id);
-        recordData.put("OPERACION_LIBRE", "test" + id);
+        recordData.put("PRODUCTO", id);
+        recordData.put("INSTRUMENTO", "test" + id);
+        recordData.put("COBRO", "test" + id);
+        recordData.put("OPERACION", "test" + id);
         recordData.put("MONEDA", "test" + id);
-        recordData.put("MONTO_FIJO", "test" + id);
-        recordData.put("MONTO_VAR", "test" + id);
-        recordData.put("BASE_COBRO", "test" + id);
-        recordData.put("LIMITE_MAX", "test" + id);
-        recordData.put("TIPO_MOVIMIENTO", "test" + id);
+        recordData.put("MONTO", "test" + id);
+        recordData.put("VAR", "test" + id);
+        recordData.put("BASE", "test" + id);
+        recordData.put("LIMITE", "test" + id);
+        recordData.put("MOVIMIENTO", "test" + id);
         recordData.put("COMENTARIO", "test" + id);
-        System.out.println(" ------------------------- currentEbReco  ------------------------------------------- ");
+        System.out.println(" ------------------------  CURRENT RECORD ------------------------------------------- ");
         return recordData;
     }
 
