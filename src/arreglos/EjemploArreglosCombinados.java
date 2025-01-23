@@ -2,6 +2,7 @@ package arreglos;
 
 public class EjemploArreglosCombinados {
     public static void main(String[] args) {
+
         int[] a, b , c;
 
         a = new int[10];
@@ -26,7 +27,6 @@ public class EjemploArreglosCombinados {
         for (int i = 0; i < c.length; i++){
             System.out.println("i = " + c[i]);
         }
-
 
     }
 }
