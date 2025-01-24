@@ -15,8 +15,6 @@ public class EjemploArreglosOrdenPrincipioFinal {
         for (int i = 0; i < numeros.length - i; i++){
             a[aux++] = numeros[i];
             a[aux++] = numeros[numeros.length - 1 - i];
-//            System.out.print(numeros[i] + " ");
-//            System.out.println(numeros[numeros.length - 1 - i]);
         }
 
         for (int i =0; i <a.length; i++){
