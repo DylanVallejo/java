@@ -19,9 +19,7 @@ public class Arreglos {
         System.out.println("productos[2] = " + productos[2]);
 
 
-
         int[] numeros = new int[4];
-
 
         numeros[0] = 1;
         numeros[1] = Integer.valueOf("2");
