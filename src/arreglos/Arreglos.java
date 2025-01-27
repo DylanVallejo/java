@@ -12,6 +12,8 @@ public class Arreglos {
         productos[2] = "Disco duro SSD Samsung externo";
 
 
+
+
         Arrays.sort(productos);
 
         System.out.println("productos[0] = " + productos[0]);
