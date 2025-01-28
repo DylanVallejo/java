@@ -11,15 +11,11 @@ public class Arreglos {
         productos[1] = "Samsung galaxy";
         productos[2] = "Disco duro SSD Samsung externo";
 
-
-
-
         Arrays.sort(productos);
 
         System.out.println("productos[0] = " + productos[0]);
         System.out.println("productos[1] = " + productos[1]);
         System.out.println("productos[2] = " + productos[2]);
-
 
         int[] numeros = new int[4];
 
@@ -38,8 +34,6 @@ public class Arreglos {
         System.out.println("j = " + j);
         System.out.println("k = " + k);
         System.out.println("l = " + l);
-
-
 
     }
 }
