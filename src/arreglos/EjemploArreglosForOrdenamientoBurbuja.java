@@ -64,7 +64,5 @@ public class EjemploArreglosForOrdenamientoBurbuja {
             System.out.println("i = " + i + " : "+ numeros[i]);
         }
 
-
-
     }
 }
