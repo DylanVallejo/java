@@ -19,7 +19,6 @@ public class MultiThread {
 
     }
 
-
     public static void processIds(String[] ids) {
 
 //TODO INTERNAMENTE ITERA Y MANDA UNO POR UNO
@@ -69,7 +68,6 @@ public class MultiThread {
 
         return headers;
     }
-
 
     private static void writeHeaderIfNotExists(String path) {
         File file = new File(path);
