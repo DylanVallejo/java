@@ -23,7 +23,7 @@ public class MultiThread {
 
 //TODO INTERNAMENTE ITERA Y MANDA UNO POR UNO
         for (String id : ids) {
-            new Thread(() -> processId(id)).start(); //TODO CREA UN HILO POr RID
+            new Thread(() -> processId(id)).start(); //TODO CREA UN HILO POR ID
         }
     }
 
