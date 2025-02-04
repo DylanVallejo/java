@@ -2,7 +2,6 @@ package bases;
 
 public class ArgumentosLineaComando {
     public static void main(String[] args) {
-
         if (args.length == 0) {
             System.out.println("debe ingresar argumentos");
             System.exit(-1);
