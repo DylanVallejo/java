@@ -7,7 +7,7 @@ import java.util.Objects;
 public class EjemploArreglosForOrdenamientoBurbuja {
 
 
-    public static void arregloInverso(String[] arreglo){
+    public static void arregloInverso(String[] arreglo){ //arreglo inverso manual
 //        int total2 = arreglo.length;
 //        int total = arreglo.length;
 //        for (int i = 0; i < total2; i++){
