@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NotasAlumnos {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         double[] notas =  new double[20];
 
@@ -19,7 +20,7 @@ public class NotasAlumnos {
             System.out.println("Inserte la nota número: " + numeroDeNota+ " del alumno con decimales 7.0 .");
             double notaIngresa = scanner.nextDouble();
             if (notaIngresa == 0){
-                System.out.println("Error finalizando el programa");
+                System.out.println("Error finalizando el programa.");
                 break;
             }else if ( notaIngresa > 7 || notaIngresa < 0 ){
                 System.out.println("Unicamente deben ser notas con rango de 1 a 7!!!!  \n Inserte la nota número: " + numeroDeNota + " del alumno con decimales 7.0 .");
@@ -44,6 +45,7 @@ public class NotasAlumnos {
                 sumaNotasMenoresCuatro += nota;
             }
         }
+
         System.out.println(" Promedio de notas mayores a 5 = " + sumaNotasMayoresACinco / notas5 );
         System.out.println(" Promedio de notas menores a 4 = " + sumaNotasMenoresCuatro / notas4);
         System.out.println(" Cantidad de notas con Uno = " + numeroDeNotasUno );
