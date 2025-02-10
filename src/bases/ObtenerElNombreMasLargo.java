@@ -18,7 +18,7 @@ public class ObtenerElNombreMasLargo {
         int personaUnolongitud = personaUno.replaceAll("\\s", "").length();
         System.out.println("personaUno = " + personaUno);
 
-        String personaDos = JOptionPane.showInputDialog("Ingrese el nombre y apellido de la segunda persona : ");
+        String personaDos = JOptionPane.showInputDialog("Ingrese el nombre y apellido de la segunda persona: ");
         int personaDoslongitud = personaDos.replaceAll("\\s", "").length();
         System.out.println("personaDos = " + personaDos);
 
