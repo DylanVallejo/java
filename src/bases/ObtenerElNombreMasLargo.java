@@ -16,15 +16,15 @@ public class ObtenerElNombreMasLargo {
         }
         // la expresion \\s reemplazara tod0 tipo de espacio en blanco como tabs o espacios.
         int personaUnolongitud = personaUno.replaceAll("\\s", "").length();
-        System.out.println("personaUno = " + personaUno);
+        System.out.println("persona Uno = " + personaUno);
 
         String personaDos = JOptionPane.showInputDialog("Ingrese el nombre y apellido de la segunda persona: ");
         int personaDoslongitud = personaDos.replaceAll("\\s", "").length();
-        System.out.println("personaDos = " + personaDos);
+        System.out.println("persona Dos = " + personaDos);
 
         String personaTres = JOptionPane.showInputDialog("Ingrese el nombre y apellido de la tercera persona: ");
         int personaTreslongitud = personaTres.replaceAll("\\s", "").length();
-        System.out.println("personaTres = " + personaTres);
+        System.out.println("persona Tres = " + personaTres);
 
         if (personaUnolongitud > personaDoslongitud && personaUnolongitud > personaTreslongitud){
             System.out.println("La persona con el nombre mas largo es : "  + personaUno + "con una longitud de " + personaUnolongitud + " caracteres.");
