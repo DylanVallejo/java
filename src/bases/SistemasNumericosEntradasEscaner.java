@@ -10,7 +10,7 @@ public class SistemasNumericosEntradasEscaner {
 
         System.out.println("Ingrese un numero entero :");
 
-//        String numeroStr =  scanner.nextLine();
+//        String numero Str =  scanner.nextLine();
 
         int numeroDecimal = 0;
 
@@ -22,13 +22,13 @@ public class SistemasNumericosEntradasEscaner {
             System.exit(0);
         }
 
-        System.out.println("numeroDecimal = "+ numeroDecimal);
+        System.out.println("numero Decimal = "+ numeroDecimal);
 
         String resultadoBinario ="numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
 
         String resultadoOctal ="numero octal de = " +  numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
 
-        String resultadoHex ="numeroHexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
+        String resultadoHex ="numero Hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
 
         String mensaje = resultadoBinario;
         mensaje += "\n" + resultadoOctal;
