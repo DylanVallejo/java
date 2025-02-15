@@ -7,7 +7,6 @@ public class EjemploArreglosOrdenPrincipioFinal {
         int[] numeros = new int[10];
         int[] a = new int[10];
 
-
         for(int i = 0; i < numeros.length; i++) {
             numeros[i] = i + 1;
         }
