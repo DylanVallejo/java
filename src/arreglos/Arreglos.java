@@ -13,6 +13,8 @@ public class Arreglos {
 
         Arrays.sort(productos);
 
+        System.out.println("productos = " + Arrays.toString(productos));
+
         System.out.println("productos[0] = " + productos[0]);
         System.out.println("productos[1] = " + productos[1]);
         System.out.println("productos[2] = " + productos[2]);
